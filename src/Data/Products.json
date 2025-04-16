@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name": "Ofis-Büro Mobilyaları",
+        "image": "prod1.jpg",
+        "link": "#"
+    },
+    {
+        "id": 2,
+        "name": "Balkon-Cafe-Bahçe Mobilyası",
+        "image": "prod2.jpg",
+        "link": "#"
+    },
+    {
+        "id": 3,
+        "name": "Mutfak Takımları",
+        "image": "prod3.jpg",
+        "link": "#"
+    }
+]

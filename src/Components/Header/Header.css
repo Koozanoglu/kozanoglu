@@ -1,0 +1,147 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-gri);
+    padding: 1rem 4%;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    /* İsteğe bağlı gölge efekti */
+    height: 100px;
+    margin-bottom: 40px;
+}
+
+.header .row-wrapper {
+    width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.header .row-wrapper .logo img {
+
+    height: 90px;
+}
+
+.header .row-wrapper .menu ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+    z-index: 999;
+    margin-right: 100px;
+}
+
+.header .row-wrapper .menu ul li {
+    padding: 5px;
+}
+
+.header .row-wrapper .menu ul li a {
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+    gap: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.header .row-wrapper .menu ul li:hover a {
+    color: var(--color-white);
+}
+
+.header .row-wrapper .menu ul li:hover {
+    transform: translateY(-3px);
+}
+
+/* Mobile Menu */
+.mobile-menu-button {
+    display: none;
+    background: none;
+    color: red;
+    font-weight: 700;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 999;
+    margin-right: 50px;
+}
+
+.mobile-menu-button i {
+    color: var(--color-white);
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -350px;
+    width: 300px;
+    height: 100%;
+    background-color: #130505;
+    box-shadow: 0px 0px 10px #c4c2a8;
+    padding: 20px;
+    transition: right 0.3s ease;
+    z-index: 998;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-menu.open {
+    right: 0;
+}
+
+.mobile-menu ul {
+    padding: 0;
+    width: 100%;
+}
+
+.mobile-menu ul li {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: var(--color-black);
+    border: 1px solid var(--color-red);
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.mobile-menu ul li a {
+    color: var(--color-red);
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.mobile-menu ul li a:hover {
+    color: var(--color-white);
+}
+
+/* Responsive */
+@media screen and (max-width:1440px) {
+    .header .row-wrapper {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .header .row-wrapper .menu {
+        display: none;
+    }
+
+    .mobile-menu-button {
+        display: block;
+    }
+
+
+}

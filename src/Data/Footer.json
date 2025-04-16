@@ -1,0 +1,40 @@
+{
+    "boxes": [
+        {
+            "type": "logo",
+            "title": "",
+            "logoSrc": "/assets/Kozanoglu_logo.png",
+            "content": [
+                "© 2025 <a href=\"#\">Kozanoğlu</a>, Tüm hakları saklıdır"
+            ]
+        },
+        {
+            "type": "links",
+            "title": "Ürünler",
+            "content": [
+                {
+                    "name": "Ofis-Büro Mobilyaları",
+                    "url": "#"
+                },
+                {
+                    "name": "Bahçe Takımları",
+                    "url": "#"
+                },
+                {
+                    "name": "Mutfak Takımları",
+                    "url": "#"
+                }
+            ]
+        },
+        {
+            "type": "social_icons",
+            "title": "Bizi Takip Et",
+            "content": [
+                {
+                    "icon": "fa-brands fa-instagram",
+                    "url": "https://www.instagram.com/koozanoglu?igsh=YTdvNzNxNTNxYmZv"
+                }
+            ]
+        }
+    ]
+}

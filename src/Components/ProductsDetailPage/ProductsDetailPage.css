@@ -1,0 +1,126 @@
+.product-detail-page {
+    padding: 4rem 2rem;
+}
+
+.kategori-baslik {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: white;
+}
+
+.urun-blok {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.yakinda {
+    font-size: 2.4rem;
+    /* Daha büyük font */
+    text-align: center;
+    color: white;
+    margin-top: 5rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+    /* Sayfanın ortalarına taşımak için yükseklik */
+}
+
+.slider-kisim {
+    flex: 1;
+    min-width: 300px;
+}
+
+/* resim arkaplanı ayarlama */
+.slider-kisim img {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #fff;
+    /* Beyaz renk */
+}
+
+/* Pagination noktalarını beyaz yap */
+.swiper-pagination-bullet {
+    background: #fff;
+    color: white;
+    opacity: 0.5;
+}
+
+/* Aktif olan pagination noktası daha belirgin */
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #fff;
+}
+
+.bilgi-kisim {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.bilgi-kisim h2 {
+    font-size: 2rem;
+    margin: 0;
+    color: white;
+}
+
+.bilgi-kisim h4 {
+    font-size: 1.2rem;
+    color: white;
+    margin: 0;
+}
+
+.bilgi-kisim p {
+    font-size: 1rem;
+    color: white;
+}
+
+.iletisim-btn {
+    padding: 0.8rem 1.5rem;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: background-color 0.3s ease;
+}
+
+.iletisim-btn:hover {
+    background-color: #1a242f;
+}
+
+/* Mobil uyumlu */
+@media screen and (max-width: 768px) {
+    .urun-blok {
+        flex-direction: column;
+    }
+
+    .slider-kisim,
+    .bilgi-kisim {
+        width: 100%;
+    }
+
+    .bilgi-kisim {
+        align-items: center;
+        text-align: center;
+    }
+
+    .iletisim-btn {
+        align-self: center;
+    }
+}

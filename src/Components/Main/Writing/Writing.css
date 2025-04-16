@@ -1,0 +1,40 @@
+.mySwiper2 {
+    width: 100%;
+    max-width: 1000px;
+    height: 60px;
+    margin: 0 auto;
+    padding: 2rem 0;
+    overflow: hidden;
+    scroll-margin-top: 250px;
+}
+
+.mySwiper2 .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100% !important;
+    text-align: center;
+}
+
+.mySwiper2 h5 {
+    font-size: 40px;
+    margin: 0;
+    white-space: nowrap;
+    text-align: center;
+    color: white;
+    width: 100%;
+    /* ✅ Bu kritik */
+}
+
+.swiper-wrapper {
+    align-items: center;
+    text-align: center;
+}
+
+/* Responsive */
+@media screen and (max-width:1024px) {
+    .mySwiper {
+        width: 100%;
+    }
+}

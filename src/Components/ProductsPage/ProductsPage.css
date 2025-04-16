@@ -1,0 +1,107 @@
+.productspage {
+    padding: 4rem 2rem;
+}
+
+/* Genel düzen: her ürün bloğu */
+.section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4rem;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.section:hover {
+    transform: scale(1.05);
+}
+
+/* Normal yön: soldan sağa */
+.section.row.reverse {
+    flex-direction: row;
+}
+
+/* Ters yön: sağdan sola */
+.section.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Ortak bloklar */
+.image,
+.text {
+    flex: 1;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Görsellerin stil ayarı */
+.image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Başlık stil ayarı */
+.text h2 {
+    font-size: 2rem;
+    color: white;
+    margin: 0;
+    text-align: center;
+}
+
+/* Hover text ortalanmış */
+.hover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 1.5rem;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+}
+
+.section:hover .hover-text {
+    display: block;
+}
+
+/* Mobil görünüm ayarları */
+@media screen and (max-width: 768px) {
+
+    .section.row,
+    .section.reverse {
+        flex-direction: column;
+    }
+
+    /* Mobilde: başlık üstte, görsel altta */
+    .section.reverse .text {
+        order: 1;
+    }
+
+    .section.reverse .image {
+        order: 2;
+    }
+
+    .section.row .right.text {
+        order: 1;
+    }
+
+    .section.row .left.image {
+        order: 2;
+    }
+
+    .image img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .text,
+    .image {
+        padding: 1rem 0;
+    }
+}
