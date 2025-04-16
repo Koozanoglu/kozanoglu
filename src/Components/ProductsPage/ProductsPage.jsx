@@ -1,4 +1,4 @@
-import React from 'react';
+import { React, useEffect } from 'react';
 import './ProductsPage.css';
 import { useNavigate } from 'react-router-dom';
 
@@ -8,6 +8,10 @@ const ProductsPage = () => {
     const handleSectionClick = (kategori) => {
         navigate(`/urunler/${encodeURIComponent(kategori)}`);
     };
+
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    }, []);
 
     return (
         <div className="productspage">

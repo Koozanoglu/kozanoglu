@@ -45,7 +45,17 @@ export const Header = () => {
                         {MenuData.menu.map((item, index) => (
                             <li key={index}>
                                 {item.name === "ÜRÜNLER" ? (
-                                    <Link to="/urunler" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{item.name}</Link>
+                                    <Link
+                                        to="/urunler"
+                                        onClick={() => {
+                                            setIsMobileMenuOpen(false);
+                                            setTimeout(() => {
+                                                window.scrollTo({ top: 0, behavior: 'smooth' });
+                                            }, 100); // küçük bir gecikme, route geçişi sonrası scroll için
+                                        }}
+                                    >
+                                        {item.name}
+                                    </Link>
                                 ) : (
                                     <a href={item.link} onClick={(e) => handleNavClick(e, item)}>
                                         {item.name}
