@@ -16,6 +16,7 @@ const AboutUs = () => {
             </div>
             <div className="about-content" >
                 <h2>{data.title}</h2>
+                <p className="subtitle">Kozanoğlumobilya</p>
                 <p>{data.paragraph}</p>
             </div>
         </section>

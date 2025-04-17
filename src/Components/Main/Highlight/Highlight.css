@@ -21,8 +21,8 @@
     gap: 10px;
 }
 
-.container .row-wrapper .content h3 {
-    font-size: 3rem;
+.container .row-wrapper .content h1 {
+    font-size: 1rem;
     font-weight: 500;
     margin-bottom: .5rem;
     text-transform: uppercase;

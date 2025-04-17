@@ -42,6 +42,18 @@
     animation: slideInFromLeft 1s ease-out;
 }
 
+.about-content .subtitle {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-top: -2rem;
+    /* Başlığa daha yakınlaştırmak için yukarıdan boşluğu azalt */
+    margin-bottom: 2rem;
+    /* Paragraftan biraz boşluk bırak */
+    color: white;
+    /* Alternatif bir vurgu rengi */
+    animation: fadeIn 1.5s ease-out;
+}
+
 .about-content p {
     font-size: 1.1rem;
     line-height: 1.8;
